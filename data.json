@@ -1,9 +1,25 @@
 {
-  "updated": "2026-09-24T16:00:00Z",
+  "updated": "2026-10-02T21:06:50Z",
   "riders": {
-    "60430": { "name": "Matthew Merritt", "raised": 0, "goal": 250 },
-    "60431": { "name": "Andrew Merritt",  "raised": 0, "goal": 250 },
-    "60432": { "name": "Gregory Merritt", "raised": 0, "goal": 250 },
-    "60433": { "name": "Dionne Merritt",  "raised": 0, "goal": 250 }
+    "60430": {
+      "name": "Matthew Merritt",
+      "raised": 0.00,
+      "goal": 250.00
+    },
+    "60431": {
+      "name": "Andrew Merritt",
+      "raised": 0.00,
+      "goal": 250.00
+    },
+    "60432": {
+      "name": "Gregory Merritt",
+      "raised": 0.00,
+      "goal": 250.00
+    },
+    "60433": {
+      "name": "Dionne Merritt",
+      "raised": 0.00,
+      "goal": 250.00
+    }
   }
 }
