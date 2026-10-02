@@ -1,6 +1,6 @@
-# Merritt Family DCC page — free public hosting with auto-updating totals
+1| # Merritt Family DCC page — free public hosting with auto-updating totals
 
-This folder is a ready-to-upload website for **GitHub Pages** (free). A scheduled job runs **3 times a day** (about 7 AM, 1 PM and 7 PM Eastern), pulls each rider's raised amount and goal straight from the DCC site, and auto-updates the page.
+This folder is a ready-to-upload website for **GitHub Pages** (free). A scheduled job runs **3 times a day** (about 7 AM, 1 PM and 7 PM Eastern), pulls each rider's raised amount and goal straight from the DCC site, and refreshes `data.json`.
 
 ## What's inside
 
@@ -16,7 +16,7 @@ This folder is a ready-to-upload website for **GitHub Pages** (free). A schedule
 1. **Create a free GitHub account** at github.com (use a personal email).
 2. Click **+ → New repository**. Name it something like `merritt-dcc`. Choose **Public**. Click **Create repository**.
 3. On the new repository page, click **uploading an existing file**. Drag in **everything inside this folder** — `index.html`, `data.json`, and the `scripts` and `.github` folders. Click **Commit changes**.
-   - Tip: the `.github` folder is hidden on some computers. On Windows, turn on *View → Show → Hidden items* in File Explorer. If it still won't upload, create it on GitHub instead: **Add file → Create new file** → type `.github/workflows/update-totals.yml` and paste the content.
+   - Tip: the `.github` folder is hidden on some computers. On Windows, turn on *View → Show → Hidden items* in File Explorer. If it still won't upload, create it on GitHub instead: **Add file → Create new file**, type `.github/workflows/update-totals.yml`, and paste the content from here.
 4. **Turn on the website:** go to **Settings → Pages**. Under *Build and deployment*, set Source to **Deploy from a branch**, branch **main**, folder **/ (root)**. Click **Save**. After a minute, GitHub will show you the live URL.
 5. **Allow the updater to save totals:** go to **Settings → Actions → General → Workflow permissions**, choose **Read and write permissions**, and click **Save**.
 6. **Run it once now:** go to the **Actions** tab, click **Update fundraising totals → Run workflow**. In about a minute, `data.json` will show today's numbers, and so will the page.
@@ -26,6 +26,6 @@ That's it. From then on the totals refresh on their own three times a day. You c
 ## Good to know
 
 - The page itself never contacts the DCC site from visitors' browsers. Only the scheduled job does, with a 16-second pause between riders to follow DonorDrive's request limit.
-- GitHub pauses scheduled jobs on repositories with no activity for 60 days. The job's own updates count as activity whenever totals change; if donations are quiet for two months, GitHub will email you a reminder.
+- GitHub pauses scheduled jobs on repositories with no activity for 60 days. The job's own updates count as activity whenever totals change; if donations are quiet for two months, GitHub will email you a heads-up.
 - To change photos or wording later, replace `index.html` the same way (Add file → Upload files).
 - If a rider's DCC ID ever changes, update the numbers in both `scripts/update-totals.sh` and the `RIDERS` list in `index.html`.

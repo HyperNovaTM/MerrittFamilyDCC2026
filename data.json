@@ -1,0 +1,9 @@
+{
+  "updated": "2026-09-24T16:00:00Z",
+  "riders": {
+    "60430": { "name": "Matthew Merritt", "raised": 0, "goal": 250 },
+    "60431": { "name": "Andrew Merritt",  "raised": 0, "goal": 250 },
+    "60432": { "name": "Gregory Merritt", "raised": 0, "goal": 250 },
+    "60433": { "name": "Dionne Merritt",  "raised": 0, "goal": 250 }
+  }
+}
